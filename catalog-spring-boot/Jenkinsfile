@@ -10,8 +10,8 @@ releaseMavenApp {
     notifySlack = false
     runIntegrationTest = false
     deployManifest = true
-    namespace = coolstore
-    parentDirectory = catalog-spring-boot
+    namespace = "coolstore"
+    parentDirectory = "catalog-spring-boot"
     dockerRepositoryURL = 'docker.release.stakater.com:443'
     javaRepositoryURL = 'http://nexus.release/repository/maven'
     podVolumes = [
