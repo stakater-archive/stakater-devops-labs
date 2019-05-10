@@ -14,11 +14,6 @@ spec:
       labels:
         app: catalog
     spec:
-      tolerations:
-        - effect: NoSchedule
-          key: dedicated
-          operator: Equal
-          value: app
       imagePullSecrets:
       - name: docker-nexus-registry-secret
       containers:
