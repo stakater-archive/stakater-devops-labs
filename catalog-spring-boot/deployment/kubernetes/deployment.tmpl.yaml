@@ -1,0 +1,28 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    group: com.stakater.platform
+    provider: stakater
+    version: 0.0.1
+  name: catalog
+  namespace: {NAMESPACE}
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: catalog
+    spec:
+      tolerations:
+        - effect: NoSchedule
+          key: dedicated
+          operator: Equal
+          value: app
+      imagePullSecrets:
+      - name: docker-nexus-registry-secret
+      containers:
+      - name: catalog
+        image: "{IMAGE}"
+        ports:
+        - containerPort: 8080
