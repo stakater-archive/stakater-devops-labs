@@ -6,7 +6,7 @@ releaseMavenApp {
     gitEmail = "stakater@gmail.com"
     usePersonalAccessToken = true
     tokenCredentialID = 'GithubToken'
-    appName = "catalog-spring-boot"
+    appName = "catalog"
     notifySlack = false
     runIntegrationTest = false
     deployManifest = true
