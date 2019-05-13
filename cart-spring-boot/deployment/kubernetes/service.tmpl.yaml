@@ -5,9 +5,9 @@ metadata:
     group: com.stakater.platform
     provider: stakater
     version: 0.0.1
-    k8sapp: catalog
+    k8sapp: cart
     expose: "true"
-  name: catalog
+  name: cart
   namespace: {NAMESPACE}
   annotations:
     config.xposer.stakater.com/Domain: stakater.com
@@ -18,7 +18,7 @@ metadata:
       ingress.kubernetes.io/force-ssl-redirect: true
 spec:
   selector:
-    app: catalog
+    app: cart
   ports:
   - name: web
     port: 8080

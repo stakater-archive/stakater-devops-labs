@@ -5,19 +5,19 @@ metadata:
     group: com.stakater.platform
     provider: stakater
     version: 0.0.1
-  name: catalog
+  name: cart
   namespace: {NAMESPACE}
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: catalog
+        app: cart
     spec:
       imagePullSecrets:
       - name: docker-nexus-registry-secret
       containers:
-      - name: catalog
+      - name: cart
         image: "{IMAGE}"
         env:
         - name: CATALOG_ENDPOINT
