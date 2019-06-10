@@ -1,20 +1,22 @@
 # Gateway
 
 ## Overview
-Spring Boot service exposing REST API for shopping cart
-It is a REST API for shopping cart.
 
+Spring Boot service exposing REST API for shopping cart.
 
 ## Stack Details
+
 It is developed in spring boot.
 
-# Dependencies
+## Dependencies
+
 It requires following things to be installed:
 
 * Java: ^8.0.
 * Maven
 
 ## Run application
+
 This section provides step by step guidelines on how to run the application:
 
 * Install java.
@@ -22,5 +24,5 @@ This section provides step by step guidelines on how to run the application:
 * To run the application use the command given below:
 
 ```bash
-$ mvn spring-boot:run
+mvn spring-boot:run
 ```
