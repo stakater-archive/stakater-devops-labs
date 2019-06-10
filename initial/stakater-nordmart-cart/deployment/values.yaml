@@ -1,0 +1,16 @@
+applicationName: "cart"
+deployment:
+  podLabels:
+    app: cart
+  image:
+    repository: docker.release.stakater.com:443/stakater/cart
+    tag: v0.0.1
+  env:
+  - name: CATALOG_ENDPOINT
+    value: "catalog.nordmart-store:8080"
+  imagePullSecrets: "docker-registry-nexus-secret"
+rbac:
+  create: false
+  serviceAccount:
+    name: default
+configMap: {}

@@ -1,0 +1,29 @@
+{
+    "author": "Stakater",
+    "contributors": [
+        "Stakater <hello@stakater.com> (https://stakater.com"
+    ],
+    "name": "web",
+    "repository": "github:stakater-lab/stakater-nordmart-web",
+    "version": "1.0.0",
+    "license": "Apache-2.0",
+    "private": true,
+    "description": "Web UI for Stakater Nordmart Microservices App",
+    "homepage": "https://stakater.com/trainings.html",
+    "dependencies": {
+        "cors": "^2.8.3",
+        "express": "^4.13.4",
+        "keycloak-connect": "^3.1.0",
+        "request": "^2.74.0"
+    },
+    "devDependencies": {
+        "bower": ">=1.7.9",
+        "bower-nexus3-resolver": "*"
+    },
+    "engines": {
+        "node": ">=0.10.10"
+    },
+    "scripts": {
+        "postinstall": "node_modules/.bin/bower --config.registry.search=${BOWER_MIRROR} install"
+    }
+}

@@ -1,0 +1,46 @@
+<div class="container container-cards-pf">
+    <div class="row cart-flex">
+        <div ng-repeat="item in products" class="col-md-4 col-sm-6 col-xs-12 mb-20">
+            <div class="row cart-tile">
+                <div class="col-xs-12 cart-tile-heading">
+                    <h2>
+                        {{item.product.name}}
+                    </h2>
+                </div>
+                <div class="col-xs-12 cart-tile-body">
+                    <p class="cart-tile-description">
+                        {{item.product.description}}
+                    </p>
+                    <img class="img-responsive img-circle cart-tile-image" ng-src="/app/imgs/{{item.product.name}}.jpg"></img>
+                    <div class="row">
+                        <div class="col-xs-12 mb-5">
+                            <h1>{{item.product.price | currency}}</h1>
+                        </div>
+                        <div class="col-xs-12 pb-10">
+                            <form class="form-inline d-inline">
+                                <div class="form-group">
+                                    <select name="quan" ng-model="item.quantity" class="form-control" id="quan">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+
+                                </div>
+                                <button class="btn btn-primary ml-10" ng-click="addToCart(item)" type="submit">
+                                    Add To Cart
+                                </button>
+                            </form>
+                            <div ng-if="item.product.availability.quantity > 0" style="float:right"><label title="{{item.product.availability.quantity}} in our store in {{item.product.availability.location}}" class="label label-{{item.product.availability.quantity < 15 ? 'warning' : 'primary'}}">{{item.product.availability.quantity}} left!</label>
+                                <a target="_blank" href="{{item.product.availability.link}}">&nbsp;<span class="fa fa-map-marker fa-lg"></span></a>
+                            </div>
+
+                            <div ng-if="item.product.availability.quantity == 0" class="text-danger" style="float:right"><span class="fa fa-warning fa-lg"></span>&nbsp;Not in Stock</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
