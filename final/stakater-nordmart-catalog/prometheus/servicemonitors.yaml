@@ -1,0 +1,23 @@
+# A sample service monitor to scrape data from this app
+apiVersion: v1
+kind: List
+items:
+- apiVersion: "monitoring.coreos.com/v1"
+  kind: ServiceMonitor
+  metadata:
+    name: stakater-nordmart-catalog-monitor
+    labels:
+      k8s-app: stakater-nordmart-catalog
+  spec:
+    jobLabel:
+    selector:
+      matchLabels:
+        k8sapp: stakater-nordmart-catalog     # All services with this label will be monitored.
+    namespaceSelector:
+      matchNames:
+      - nordmart-dev-apps       # The namespace in which the application will be deployed
+      - nordmart-prod-apps
+    endpoints:
+      - interval: 10s
+        path: /actuator/prometheus     # The endpoint of service from which prometheus will scrape data
+        port: web

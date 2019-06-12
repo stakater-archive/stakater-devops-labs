@@ -1,10 +1,10 @@
-# stakater-devops-labs
+# Stakater-devops-labs
 
-# Overview
+## Overview
 
 The Lab for the DevOps Workshop with Kubernetes and Containers.
 
-# Description
+## Description
 
 CoolStore is an online store web application built using Spring Boot, WildFly Swarm, Eclipse Vert.x, Node.js and AngularJS adopting the microservices architecture.
 
@@ -18,10 +18,11 @@ CoolStore is an online store web application built using Spring Boot, WildFly Sw
 
 * **Cart**: Spring Boot service exposing REST API for shopping cart. Details can be found on this [link](docs/cart.md)
 
-# Architecture
+## Architecture
+
 The diagram given below shows architecture of the application.
 
-```
+```text
                               +-------------+
                               |             |
                               |     Web     |
