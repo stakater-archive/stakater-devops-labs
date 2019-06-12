@@ -1,2 +1,51 @@
 # stakater-devops-labs
-The Lab for the DevOps Workshop with Kubernetes and Containers
+
+# Overview
+
+The Lab for the DevOps Workshop with Kubernetes and Containers.
+
+# Description
+
+CoolStore is an online store web application built using Spring Boot, WildFly Swarm, Eclipse Vert.x, Node.js and AngularJS adopting the microservices architecture.
+
+* **Web**: A Node.js/Angular front-end. Details can be found on this [link](docs/web.md)
+
+* **API Gateway**: vert.x service aggregates API calls to back-end services and provides a condenses REST API for front-end. Details can be found on this [link](docs/gateway.md)
+
+* **Catalog**: Spring Boot service exposing REST API for the product catalog and product information. Details can be found on this [link](docs/catalog.md).
+
+* **Inventory**: WildFly Swarm service exposing REST API for product's inventory status. Details can be found on this [link](docs/inventory.md)
+
+* **Cart**: Spring Boot service exposing REST API for shopping cart. Details can be found on this [link](docs/cart.md)
+
+# Architecture
+The diagram given below shows architecture of the application.
+
+```
+                              +-------------+
+                              |             |
+                              |     Web     |
+                              |             |
+                              |   Node.js   |
+                              |  AngularJS  |
+                              +------+------+
+                                     |
+                                     v
+                              +------+------+
+                              |             |
+                              | API Gateway |
+                              |             |
+                              |   Vert.x    |
+                              |             |
+                              +------+------+
+                                     |
+                 +---------+---------+-------------------+
+                 v                   v                   v
+          +------+------+     +------+------+     +------+------+
+          |             |     |             |     |             |
+          |   Catalog   |     |  Inventory  |     |     Cart    |
+          |             |     |             |     |             |
+          | Spring Boot |     |WildFly Swarm|     | Spring Boot |
+          |             |     |             |     |             |
+          +-------------+     +-------------+     +-------------+
+```
