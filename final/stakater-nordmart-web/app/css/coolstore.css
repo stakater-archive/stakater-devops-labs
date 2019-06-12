@@ -1,0 +1,90 @@
+.media img {
+	height: 100px;
+}
+
+.p-t-8 {
+	  padding-top: 8px !important;
+}
+
+.pb-10 {
+	padding-bottom: 10px;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.d-inline {
+	display: inline;
+}
+
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+	cursor: pointer;
+}
+
+.navbar-pf {
+	background: #fe9b07;
+	border-top: 0px;
+}
+
+.navbar-brand {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-title {
+	font-size: 32px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.navbar-pf .navbar-utility>li>a {
+	color: #ffffff !important;
+	font-weight: 600;
+}
+
+.cart-flex {
+	display:flex; 
+	flex-wrap: wrap; 
+	align-items: stretch; 
+	justify-content: stretch;
+}
+
+.cart-tile {
+	margin: 10px; 
+	height: 100%; 
+	box-shadow: 0 1px 1px rgba(3,3,3,.175);
+}
+
+.cart-tile-heading {
+	border-top: 1px solid #39a5dc; 
+	border-bottom: 1px solid #d1d1d1;
+	padding: 0 20px;
+	height: 10%;
+}
+
+.cart-tile-body {
+	display: flex; 
+	flex-direction: column; 
+	height: 90%
+}
+
+.cart-tile-description {
+	padding-top:5px;
+	height: 100px; 
+	overflow: hidden;
+}
+
+.cart-tile-image {
+	margin-bottom: auto
+}
