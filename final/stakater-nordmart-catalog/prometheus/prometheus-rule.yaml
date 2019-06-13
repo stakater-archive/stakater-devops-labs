@@ -1,0 +1,16 @@
+# A sample alert rule for the application which sends alerts when count request > 4.
+# Add this rule in prometheus alert rules
+configmap:
+  data:
+    general.rules: |+
+      groups:
+      - name: counts.rules
+        rules:
+        - alert: CountGreater
+          expr: count_requests_total > 4
+          for: 1s
+          labels:
+            severity: critical
+          annotations:
+            description: '{{ $labels.pod }} has count > 4.'
+            summary: Count is greater

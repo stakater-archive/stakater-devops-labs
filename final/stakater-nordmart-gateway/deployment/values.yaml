@@ -1,0 +1,30 @@
+applicationName: "gateway"
+deployment:
+  podLabels:
+    app: gateway
+  image:
+    repository: docker.release.stakater.com:443/stakater/gateway
+    tag: v0.0.2
+  imagePullSecrets: "docker-registry-nexus-secret"
+  env:
+  - name: CATALOG_API_HOST
+    value: "catalog.nordmart-store"
+  - name: CATALOG_API_PORT
+    value: "8080"
+  - name: INVENTROY_API_HOST
+    value: "inventory.nordmart-store"
+  - name: INVENTROY_API_PORT
+    value: "8080"
+  - name: DISABLE_CART_DISCOVERY
+    value: "false"
+  - name: CART_API_HOST
+    value: "cart.nordmart-store"
+  - name: CART_API_PORT
+    value: "8080"
+  - name: HTTP_PORT
+    value: "8080"
+rbac:
+  create: false
+  serviceAccount:
+    name: default
+configMap: {}
