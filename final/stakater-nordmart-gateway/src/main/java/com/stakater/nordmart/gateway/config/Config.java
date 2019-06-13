@@ -13,17 +13,18 @@ public class Config
         Config config = new Config();
         config.cartAddress = new Address(System.getenv("CART_API_HOST"), System.getenv("CART_API_PORT"));
 
-        config.catalogAddress = new Address(System.getenv("CATALOG_API_HOST"), "8082");
+        config.catalogAddress = new Address(System.getenv("CATALOG_API_HOST"),
+            System.getenv("CATALOG_API_PORT"));
 
         config.inventoryAddress = new Address(System.getenv("INVENTORY_API_HOST"),
-            "9001");
+            System.getenv("INVENTORY_API_PORT"));
 
         try
         {
             config.serverPort = Integer.parseInt(System.getenv("HTTP_PORT"));
         } catch (NumberFormatException ignored)
         {
-            config.serverPort = 8081;
+            config.serverPort = 8080;
         }
 
         config.disableCartDiscovery = Boolean.parseBoolean(System.getenv("DISABLE_CART_DISCOVERY"));
