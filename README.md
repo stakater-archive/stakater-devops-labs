@@ -6,7 +6,7 @@ The Lab for the DevOps Workshop with Kubernetes and Containers.
 
 ## Description
 
-CoolStore is an online store web application built using Spring Boot, WildFly Swarm, Eclipse Vert.x, Node.js and AngularJS adopting the microservices architecture.
+Nordmart is an online store web application built using Spring Boot, WildFly Swarm, Eclipse Vert.x, Node.js and AngularJS adopting the microservices architecture.
 
 * **Web**: A Node.js/Angular front-end. Details can be found on this [link](final/stakater-nordmart-web/README.md)
 

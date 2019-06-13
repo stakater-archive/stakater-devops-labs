@@ -5,7 +5,7 @@ var express = require('express'),
     app = express(),
     path = require("path"),
     keycloakConfig = require('./app/keycloak.config.js'),
-    coolstoreConfig = require('./app/coolstore.config.js'),
+    nordmartConfig = require('./app/nordmart.config.js'),
     Keycloak = require('keycloak-connect'),
     cors = require('cors');
 
@@ -27,9 +27,9 @@ app.use(function(err, req, res, next) {
 app.get('/keycloak.json', function(req, res, next) {
     res.json(keycloakConfig);
 });
-// coolstore config server
-app.get('/coolstore.json', function(req, res, next) {
-    res.json(coolstoreConfig);
+// nordmart config server
+app.get('/nordmart.json', function(req, res, next) {
+    res.json(nordmartConfig);
 });
 
 // health Check
@@ -41,7 +41,7 @@ app.use(express.static(path.join(__dirname, '/views')));
 app.use('/app', express.static(path.join(__dirname, '/app')));
 app.use('/bower_components', express.static(path.join(__dirname, '/bower_components')));
 
-console.log("coolstore config: " + JSON.stringify(coolstoreConfig));
+console.log("nordmart config: " + JSON.stringify(nordmartConfig));
 console.log("keycloak config: " + JSON.stringify(keycloakConfig));
 
 

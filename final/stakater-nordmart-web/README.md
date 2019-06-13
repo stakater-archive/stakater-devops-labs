@@ -44,7 +44,7 @@ To deploy app inside a docker container
 * Finally run the image by executing
 
   ```bash
-  docker run -d --name web --network nordmart-apps -e PORT=4200 -e SECURE_COOLSTORE_GW_ENDPOINT="gateway:8080" -p 4200:4200 web
+  docker run -d --name web --network nordmart-apps -e PORT=4200 -e SECURE_NORDMART_GW_ENDPOINT="gateway:8080" -p 4200:4200 web
   ```
 
 ### Helm Charts

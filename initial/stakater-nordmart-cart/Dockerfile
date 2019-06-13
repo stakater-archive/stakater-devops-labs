@@ -4,7 +4,7 @@ LABEL name="Cart Service" \
       maintainer="Stakater <stakater@aurorasolutions.io>" \
       vendor="Stakater" \
       release="1" \
-      summary="Project containing cart service for coolstore"
+      summary="Project containing cart service for Nordmart"
 
 USER 1001
 

@@ -7,8 +7,8 @@
     <artifactId>gateway</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>CoolStore Gateway Service</name>
-    <description>CoolStore Gateway Service with Eclipse Vert.x</description>
+    <name>Nordmart Gateway Service</name>
+    <description>Nordmart Gateway Service with Eclipse Vert.x</description>
     <properties>
         <vertx.version>3.4.2</vertx.version>
         <vertx-maven-plugin.version>1.0.8</vertx-maven-plugin.version>

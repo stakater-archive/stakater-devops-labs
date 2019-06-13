@@ -17,8 +17,8 @@ angular.element(document).ready(function () {
     var initInjector = angular.injector(["ng"]);
     var $http = initInjector.get("$http");
 
-    $http.get("coolstore.json").then(function (response) {
-        module.constant("COOLSTORE_CONFIG", response.data);
+    $http.get("nordmart.json").then(function (response) {
+        module.constant("NORDMART_CONFIG", response.data);
         
         if (!response.data.SSO_ENABLED) {
             angular.bootstrap(document, ["app"], {

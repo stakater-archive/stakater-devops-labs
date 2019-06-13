@@ -6,8 +6,8 @@
     <groupId>com.stakater.nordmart</groupId>
     <artifactId>cart</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>CoolStore Cart Service</name>
-    <description>CoolStore cart Service with Spring Boot</description>
+    <name>Nordmart Cart Service</name>
+    <description>Nordmart cart Service with Spring Boot</description>
     <properties>
         <postgresql.version>9.4.1212</postgresql.version>
         <version.org.infinispan>6.0.2.Final</version.org.infinispan>
