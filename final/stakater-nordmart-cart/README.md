@@ -15,26 +15,43 @@ It requires following things to be installed:
 
 ### Local deployment
 
-This section provides step by step guidelines on how to run the application:
-
-* To run the application use the command given below:
+To run the application locally use the command given below:
 
 ```bash
-mvn spring-boot:run
+mvn clean spring-boot:run
 ```
+
+### Docker
+
+To deploy app inside a docker container
+
+* Create a network if it doesn't already exist by executing
+
+  ```bash
+  docker network create --driver bridge nordmart-apps
+  ```
+
+* Build jar file of the app by executing
+
+  ```bash
+  mvn clean package
+  ```
+
+* Next build the image using
+
+  ```bash
+  docker build -t cart .
+  ```
+
+* Finally run the image by executing
+
+  ```bash
+  docker run -d --name cart --network nordmart-apps -p 8082:8080 -e CATALOG_ENDPOINT="catalog:8080" cart
+  ```
+
+  Note:
+  Make sure that catalog is running before running this.
 
 ### Helm Charts
 
-If you have configured helm on your cluster, you can deploy cart microservice using our generic `Application` chart from our public chart repository and deploy it via helm using below mentioned commands
-
-Note:
-The default values are placed inside [values.yaml](deployment/values.yaml]).
-
-```bash
-helm repo add stakater https://stakater.github.io/stakater-charts
-
-helm repo update
-
-helm install --name cart --namespace nordmart-store stakater/application -f deployment/values.yaml
-```
-
+To deploy using helm, see the sample HelmRelease [here](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/cart-helm-release.yaml)

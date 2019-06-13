@@ -4,7 +4,7 @@ LABEL name="Inventory Service" \
       maintainer="Stakater <stakater@aurorasolutions.io>" \
       vendor="Stakater" \
       release="1" \
-      summary="Project containing gateway service with vertix for coolstore"
+      summary="Project containing gateway service with vertix for Nordmart"
 
 USER root
 

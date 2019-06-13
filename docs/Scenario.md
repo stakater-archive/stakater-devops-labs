@@ -40,3 +40,15 @@ The task can be split as follows:
     - Expose baseURL from cart service `cart.js`.
     - Add baseURL to scope in `cartController` using cart's baseURL.
     - Update URL in `cart.html` to point to correct endpoint.
+
+## Deployment
+
+To update the deployment after changing the code, just push the code to the repo and create a PR.
+
+Jenkins will be notified automatically via webhook and it will create a docker image for you with a snapshot tag if code can be compiled and tests are successful. After the pull request is approved by your team lead, you can merge it.
+
+Once merged, Jenkins will be notified again and it will create a new version tagged image which will be pushed to nexus.
+
+The dev stack is running using GitOps via flux, so as soon as new image gets pushed to nexus, it will update the image version automatically in [nordmart-dev-apps](https://github.com/stakater-lab/nordmart-dev-apps) repo and update the app deployment with the latest version.
+
+The prod stack is running using CIOPS so when you want to update the image on the production stack, update the image version in the corresponding helm release in the [nordmart-prod-apps](https://github.com/stakater-lab/nordmart-prod-apps/) repository.

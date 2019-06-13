@@ -4,7 +4,7 @@ LABEL name="Inventory Service" \
       maintainer="Stakater <stakater@aurorasolutions.io>" \
       vendor="Stakater" \
       release="1" \
-      summary="Project containing inventory service with wildfly for coolstore"
+      summary="Project containing inventory service with wildfly for Nordmart"
 
 USER 1001
 

@@ -1,6 +1,6 @@
 {
-    "name": "coolstore-microservice",
-    "description": "Web UI for the CoolStore Microservices App",
+    "name": "nordmart-microservice",
+    "description": "Web UI for the Nordmart Microservices App",
     "authors": [
         "Stakater"
     ],

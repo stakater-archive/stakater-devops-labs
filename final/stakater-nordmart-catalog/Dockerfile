@@ -4,7 +4,7 @@ LABEL name="Catalog Service" \
       maintainer="Stakater <stakater@aurorasolutions.io>" \
       vendor="Stakater" \
       release="1" \
-      summary="Project containing catalog service for coolstore"
+      summary="Project containing catalog service for Nordmart"
 
 USER 1001
 
