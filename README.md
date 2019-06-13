@@ -48,7 +48,14 @@ The diagram given below shows architecture of the application.
           |             |     |             |     |             |
           | Spring Boot |     |WildFly Swarm|     | Spring Boot |
           |             |     |             |     |             |
-          +-------------+     +-------------+     +-------------+
+          +------+------+     +-------------+     +-------------+
+                 |                                       |
+                 v                                       v
+          +------+------+                         +------+------+
+          |             |                         |             |
+          |    MySQL    |                         |    MySQL    |
+          |             |                         |             |
+          +-------------+                         +-------------+
 ```
 
 ## Views
