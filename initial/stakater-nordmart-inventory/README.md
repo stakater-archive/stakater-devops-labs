@@ -1,8 +1,27 @@
 # stakater-nordmart-inventory
 
-A maven wildfly inventory app for lab
+## Overview
+
+A maven wildfly inventory application that exposes product's inventory status on REST API endpoints.
+
+## Dependencies
+
+It requires following things to be installed:
+
+* Java: ^8.0
+* Maven
 
 ## Deployment strategy
+
+### Local deployment
+
+This section provides step by step guidelines on how to run the application:
+
+* To run the application use the command given below:
+
+```bash
+clean package wildfly-swarm:run
+```
 
 ### Helm Charts
 

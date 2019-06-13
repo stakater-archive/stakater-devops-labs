@@ -1,8 +1,30 @@
 # stakater-nordmart-web
 
-A node js web app for lab
+## Overview
+A node js web application.
+
+It requires following things to be installed:
+
+* Node: ^8.0.
+* NPM.
 
 ## Deployment strategy
+
+### Local deployment
+
+This section provides step by step guidelines on how to run the application:
+
+* Install all the dependencies:
+
+```bash
+npm install
+```
+
+* To run the application:
+
+```bash
+npm start
+```
 
 ### Helm Charts
 

@@ -1,8 +1,27 @@
 # stakater-nordmart-gateway
 
-A maven vertx gateway app for lab
+## Overview
+
+A maven vertx gateway application that aggregates API calls to backend services by providing a condensed REST API for front-end.
+
+## Dependencies
+
+It requires following things to be installed:
+
+* Java: ^8.0.
+* Maven
 
 ## Deployment strategy
+
+### Local deployment
+
+This section provides step by step guidelines on how to run the application:
+
+* To run the application use the command given below:
+
+```bash
+clean package vertx:run
+```
 
 ### Helm Charts
 
