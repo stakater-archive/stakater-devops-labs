@@ -132,3 +132,11 @@ and then you can just set the value as it changes using
 ```java
 myCount.set(myList.size());
 ```
+
+### Monitoring
+
+Dasbhoards given below can be used to monitor application by configuring them in Monitoring stack. If monitoring stack is not already configured use guidelines given in this [link](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html) to configure it. 
+
+* Catalog service metrics dashboard can be configured using this [config](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-service-dashboard.yaml).
+
+  ![catalog-service.png](docs/images/catalog-service.png)
