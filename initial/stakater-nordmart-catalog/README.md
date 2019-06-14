@@ -49,9 +49,17 @@ To deploy app inside a docker container
   docker run -d --name catalog --network nordmart-apps -p 8080:8080 catalog
   ```
 
-### Helm Charts
+## Helm Charts
 
-To deploy using helm, see the sample HelmRelease [here](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-helm-release.yaml)
+### Pre-requisites
+
+Helm operator needs to to be running inside the cluster. Helm operator is deployed by Stakater Global Stack, deployment guidelines are provided in this [link](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html)
+
+### Helm chart deployment
+
+To create helm release of this application using the command given below:
+
+kubectl apply -f [helm-release](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-helm-release.yaml).yaml -n <namespace-name>
 
 ## Prometheus
 

@@ -91,3 +91,9 @@ To deploy all the apps follow the README of each project in the order given belo
 * [Cart](initial/stakater-nordmart-cart/README.md)
 * [Gateway](initial/stakater-nordmart-gateway/README.md)
 * [Web](initial/stakater-nordmart-web/README.md)
+
+## Helm Operator
+
+
+
+
