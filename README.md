@@ -63,24 +63,25 @@ The diagram given below shows architecture of the application.
 The app contains two main screens.
 
 * First one is the home screen which lists all the products. It fetches all the products from catalog and their available stock value from inventory and displays them. You can add an item to the cart using the respective `Add To Cart` button.
+
   ![home.png](docs/images/home.png)
+
 * Second is the cart screen which shows the items currently in your cost and their cost.
+
   ![cart.png](docs/images/cart.png)
 
 ## Monitoring
 
-Application can be monitored using these dashboards.
+Dasbhoards given below can be used to monitor application by configuring them in Monitoring stack. If monitoring stack is not already configured use this [link](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html) to configure it.
 
-* Application dashboard metrices, it's config can be found [here](https://github.com/stakater/StakaterKubeHelmMonitoring/blob/azure-capability/manifests/grafanaDashboards/jvm.yaml):
+* JVM metrics dashboard can be configured using this [config](https://github.com/stakater/StakaterKubeHelmMonitoring/blob/azure-capability/manifests/grafanaDashboards/jvm.yaml) file.
 
-  ![cart.png](docs/images/jvm.png)
+  ![jvm.png](docs/images/jvm.png)
 
-* Catalog serivce dashboard, it's config can be found [here](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-service-dashboard.yaml):
+* Catalog service metrics dashboard can be configured using this [config](https://github.com/stakater/StakaterKubeHelmMonitoring/blob/azure-capability/manifests/grafanaDashboards/jvm.yaml) file.
 
-  ![cart.png](docs/images/catalog-service.png)
+  ![catalog-service.png](docs/images/catalog-service.png)
    
-
-
 ## Deployment
 
 To deploy all the apps follow the README of each project in the order given below:
