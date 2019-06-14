@@ -72,13 +72,13 @@ The app contains two main screens.
 
 ## Monitoring
 
-Dasbhoards given below can be used to monitor application by configuring them in Monitoring stack. If monitoring stack is not already configured use this [link](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html) to configure it.
+Dasbhoards given below can be used to monitor application by configuring them in Monitoring stack. If monitoring stack is not already configured use guidelines given in this [link](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html) to configure it.
 
-* JVM metrics dashboard can be configured using this [config](https://github.com/stakater/StakaterKubeHelmMonitoring/blob/azure-capability/manifests/grafanaDashboards/jvm.yaml) file.
+* JVM metrics dashboard can be configured using this [config](https://github.com/stakater/StakaterKubeHelmMonitoring/blob/azure-capability/manifests/grafanaDashboards/jvm.yaml).
 
   ![jvm.png](docs/images/jvm.png)
 
-* Catalog service metrics dashboard can be configured using this [config](https://github.com/stakater/StakaterKubeHelmMonitoring/blob/azure-capability/manifests/grafanaDashboards/jvm.yaml) file.
+* Catalog service metrics dashboard can be configured using this [config](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-service-dashboard.yaml).
 
   ![catalog-service.png](docs/images/catalog-service.png)
    
