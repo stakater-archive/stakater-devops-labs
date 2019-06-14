@@ -49,9 +49,17 @@ To deploy app inside a docker container
   docker run -d --name catalog --network nordmart-apps -p 8080:8080 catalog
   ```
 
-### Helm Charts
+## Helm Charts
 
-To deploy using helm, see the sample HelmRelease [here](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-helm-release.yaml)
+### Pre-requisites
+
+Helm operator needs to to be running inside the cluster. Helm operator is deployed by Stakater Global Stack, deployment guidelines are provided in this [link](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html)
+
+### Helm chart deployment
+
+To create helm release of this application using the command given below:
+
+kubectl apply -f [helm-release](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-helm-release.yaml).yaml -n <namespace-name>
 
 ## Prometheus
 
@@ -132,3 +140,11 @@ and then you can just set the value as it changes using
 ```java
 myCount.set(myList.size());
 ```
+
+### Monitoring
+
+Dasbhoards given below can be used to monitor application by configuring them in Monitoring stack. If monitoring stack is not already configured use guidelines given in this [link](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html) to configure it. 
+
+* Catalog service metrics dashboard can be configured using this [config](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-service-dashboard.yaml).
+
+  ![catalog-service.png](docs/images/catalog-service.png)
