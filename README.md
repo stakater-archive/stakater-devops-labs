@@ -67,6 +67,20 @@ The app contains two main screens.
 * Second is the cart screen which shows the items currently in your cost and their cost.
   ![cart.png](docs/images/cart.png)
 
+## Monitoring
+
+Application can be monitored using these dashboards.
+
+* Application dashboard metrices, it's config can be found [here](https://github.com/stakater/StakaterKubeHelmMonitoring/blob/azure-capability/manifests/grafanaDashboards/jvm.yaml):
+
+  ![cart.png](docs/images/jvm.png)
+
+* Catalog serivce dashboard, it's config can be found [here](https://github.com/stakater-lab/nordmart-dev-apps/blob/master/releases/catalog-service-dashboard.yaml):
+
+  ![cart.png](docs/images/catalog-service.png)
+   
+
+
 ## Deployment
 
 To deploy all the apps follow the README of each project in the order given below:
