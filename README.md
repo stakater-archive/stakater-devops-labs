@@ -95,8 +95,9 @@ Dasbhoards given below can be used to monitor application by configuring them in
   docker run -u root --rm -d -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
   ```
 
-* Deploy Stakater Stacks(Global, Logging, Monitoring, Release, Tracing) by following [this guide](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stack-on-azure.html).
-Once the stacks are deployed and running you can use [Forecastle](https://github.com/stakater/forecastle), which is automatically installed by Global stack, to see all the apps installed in the cluster i.e ![forecastle.png](docs/images/forecastle.png)
+* Deploy Stakater Stacks(Global, Logging, Monitoring, Release, Tracing) by following [this guide](https://playbook.stakater.com/content/processes/bootstrapping/deploying-stakater-stacks.html).
+
+  Once the stacks are deployed and running you can use [Forecastle](https://github.com/stakater/forecastle), which is automatically installed by Global stack, to see all the apps installed in the cluster i.e ![forecastle.png](docs/images/forecastle.png)
 
 * We already have separate repositories for the different microservices in the `stakater-lab` organization with the prefix `stakater-nordmart-`. Similarly there are other repositories for [dev-tools](https://github.com/stakater-lab/nordmart-dev-tools), [dev-apps](https://github.com/stakater-lab/nordmart-dev-apps) and [prod-apps](https://github.com/stakater-lab/nordmart-prod-apps) which you will need. You can either use them for demo or fork your own repositories.
 To enable CI/CD for these apps, create a new pipeline by following the steps below
