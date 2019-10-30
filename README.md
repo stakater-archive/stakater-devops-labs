@@ -130,3 +130,7 @@ So as soon as you push to master branch of an app e.g cart, Jenkins will push th
 #### CI Ops - Prod Stack
 
 In production stack, we use CI Ops so whenever you wish to update an app, go to `prod-apps` repository and update the docker image version of the respective app in the respective `*-release` file. When you create the pull request for this change, Jenkins will verify the change by executing `dry-run` functionality. If it succeeds then you can merge the pull request. Once this change gets merged to `master` branch Jenkins will re-run the pipeline and update the deployment in prod stack.
+
+## Acknowledgement
+
+- Nordmart is inspired from quite famous CoolStore
