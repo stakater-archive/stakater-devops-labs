@@ -133,4 +133,4 @@ In production stack, we use CI Ops so whenever you wish to update an app, go to 
 
 ## Acknowledgement
 
-- Nordmart is inspired from quite famous CoolStore
+- Nordmart is inspired from [CoolStore project](https://github.com/jbossdemocentral/coolstore-microservice) by [JBoss Demo Central](https://github.com/jbossdemocentral) and [Red Hat Demo Central](https://gitlab.com/redhatdemocentral).
