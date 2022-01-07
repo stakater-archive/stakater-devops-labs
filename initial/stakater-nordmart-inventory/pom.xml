@@ -11,7 +11,7 @@
   <description>Nordmart Inventory Service with WildFly Swarm</description>
   <properties>
     <version.wildfly.swarm>2017.8.1</version.wildfly.swarm>
-    <h2.version>1.4.187</h2.version>
+    <h2.version>2.0.206</h2.version>
     <postgresql.version>9.4.1207</postgresql.version>
     <failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
