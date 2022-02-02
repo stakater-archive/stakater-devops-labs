@@ -9,7 +9,7 @@
     <name>Nordmart Cart Service</name>
     <description>Nordmart cart Service with Spring Boot</description>
     <properties>
-        <postgresql.version>9.4.1212</postgresql.version>
+        <postgresql.version>42.2.25</postgresql.version>
         <version.org.infinispan>6.0.2.Final</version.org.infinispan>
         <java.version>1.8</java.version>
         <hamcrest.version>1.3</hamcrest.version>
